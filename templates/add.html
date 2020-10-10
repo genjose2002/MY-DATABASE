@@ -1,0 +1,30 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Add User</title>  
+</head>  
+<body>  
+    <h2>User Information</h2>   
+    <form action = "/savedetails" method="post">  
+    <table>  
+        <tr><td>First Name</td><td><input type="text" name="first_name"></td></tr>  
+        <tr><td>Last Name</td><td><input type="text" name="last_name"></td></tr>
+        <tr><td>Email</td><td><input type="email" name="email"></td></tr>  
+        <tr><td>Address</td><td><input type="text" name="address"></td></tr>
+        <tr><td>Date of Birth</td><td><input type="text" name="date_of_birth"></td></tr>
+        <tr><td>Age</td><td><input type="text" name="age"></td></tr>  
+        <tr><td><input type="submit" value="Submit"></td></tr>  
+    </table>  
+    </form>  
+</body>  
+</html> 
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>save details</title>  
+</head>  
+<body>  
+    <h3>Hi Admin, {{msg}}</h3>  
+    <a href="/view">View Employees</a>  
+</body>  
+</html>  
